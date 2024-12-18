@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/acer/ontologies/2024/11/ShapeOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/acer/ontologies/2024/11/ShapeOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/acer/ontologies/2024/11/ShapeOntology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ellipse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parallelogram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trapezoid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triangle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBase1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBase2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMajorAxis"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinorAxis"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRadius"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSideLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Circle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ellipse"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parallelogram"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trapezoid"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBase"/>
+        <Class IRI="#Parallelogram"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBase"/>
+        <Class IRI="#Triangle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBase1"/>
+        <Class IRI="#Trapezoid"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBase2"/>
+        <Class IRI="#Trapezoid"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#Parallelogram"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#Trapezoid"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#Triangle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLength"/>
+        <Class IRI="#Rectangle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLength"/>
+        <Class IRI="#Square"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMajorAxis"/>
+        <Class IRI="#Ellipse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMinorAxis"/>
+        <Class IRI="#Ellipse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRadius"/>
+        <Class IRI="#Circle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWidth"/>
+        <Class IRI="#Rectangle"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBase"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBase1"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBase2"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMajorAxis"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMinorAxis"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRadius"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
